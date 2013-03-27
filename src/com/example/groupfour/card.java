@@ -1,5 +1,8 @@
 package com.example.groupfour;
 
+import java.util.ArrayList;
+import java.util.Map;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -92,8 +95,7 @@ public class card extends Activity {
 	public boolean onOptionsItemSelected(MenuItem item) {
 		switch (item.getItemId()) {
 		case R.id.test:
-			//Globals.testpos = 0;
-			// open up the about activity
+			//start Activity
 			startActivity(new Intent("com.example.groupfour.TEST"));
 			return true;
 		}

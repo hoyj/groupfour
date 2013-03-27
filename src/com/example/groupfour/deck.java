@@ -105,9 +105,11 @@ public class deck extends ListActivity {
 		editor2.putString("y","yolo").apply();
 		editor.putString("z","z").apply();
 		editor2.putString("z","zoo").apply();	
-		
 		deckName = MainActivity.chosen;
 		System.out.println("deckName at getCards is " + deckName);
+		if(deckName == null){
+			finish();
+		}
 		String tmpStr = deckName + "front";
 		SharedPreferences cardlist = getSharedPreferences(tmpStr, Context.MODE_PRIVATE);
 		Map<String, String> tmp = (Map<String, String>) cardlist.getAll();
