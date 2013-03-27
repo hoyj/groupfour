@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.groupfour"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.groupfour.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.deck"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.DECK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.card"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.CARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.test"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.TEST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.addcard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.ADDCARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.adddeck"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.ADDDECK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.deletecard"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.DELETECARD" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.groupfour.deletedeck"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="com.example.groupfour.DELETEDECK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
